@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .confirmation-form-div{
+            background-color: rgb(26, 24, 24);
+            border-radius: 1.4rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        .info{
+            color: white;
+            background-color: black;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 0.4rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="confirmation-form-div">
+        <h1>Email:</h1>
+        <div class="info"><%= email %></div>
+        <h1>Password:</h1>
+        <div class="info"><%= password %></div>
+    </div>
+</body>
+</html>

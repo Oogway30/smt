@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Griminsta</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .fill {
+        fill: rgb(255, 104, 129);
+
+        /* stroke-width: 3rem */
+      }
+      .fill-comments {
+        fill: rgb(245, 24, 79);
+
+        /* stroke-width: 3rem */
+      }
+      .something {
+        position: relative;
+        top: 2rem;
+        width: 7rem;
+      }
+
+      .input-field-submit {
+        border: none;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      h1 {
+        font-family: "Cookie", serif;
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      .small-big-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 80%;
+        margin-top: -3rem;
+      }
+      .second-div {
+        width: 40%;
+      }
+
+      .third-div {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .profile-picture1 {
+        right: 0.3rem;
+      }
+
+      .profile-picture-div {
+        padding-bottom: 2rem;
+      }
+      .comment {
+        transform: scale(1.2);
+      }
+      .heart {
+        transform: scale(1.2);
+      }
+      .comment-div {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+        border: 1px solid #000000;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 15rem;
+        top: 5rem;
+      }
+
+      .comment-div-small {
+        background-color: #b3b2b2;
+        color: white; /* Use `color` for text inside */
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h-full flex flex-row justify-start">
+      <div class="h-full first-div bg-white w-130.5 p-10.5 pt-1.5">
+        <h1 class="text-2x1 title">Graminsta</h1>
+
+        <div class="small-big-div">
+          <div class="flex items-center">
+            <img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/tiny-glyph/32/home.png"
+              alt="home"
+            />
+            <h3 class="ml-6">Home</h3>
+          </div>
+          <div class="flex items-center">
+            <img
+              width="35"
+              height="35"
+              src="https://img.icons8.com/ios/50/search--v1.png"
+              alt="search--v1"
+            />
+            <h3 class="ml-6">Suchen</h3>
+          </div>
+
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-chat"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"
+              />
+            </svg>
+            <h3 class="ml-6">Denken</h3>
+          </div>
+
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+              />
+              <h3 class="ml-6">Liken</h3>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="second-div flex justify-center items-start flex-col">
+        <div class="profile-picture-div">
+          <img
+            class="profile-picture1 relative"
+            width="50"
+            height="50"
+            src="wmremove-transformed.png"
+            alt="User Profile"
+          />
+          <h3>
+            Umweltprobleme (Meeresverschmutzung) von Pratham, Lilly, Moritz, Tim
+            und Luis Matti Klack
+          </h3>
+        </div>
+        <div>
+          <video
+            class="video rounded-5xl"
+            src="U.mp4"
+            poster="cover.jpg"
+            style="border-radius: 0.4rem"
+          ></video>
+        </div>
+        <div class="something flex relative justify-between top-1.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="comment relative top-10"
+            viewBox="0 0 16 16"
+          >
+            <path
+              class="commentpath"  d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="heart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              class="heart-path"
+              fill-rule="evenodd"
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="third-div">
+        <div class="flex justify-center bg-grey">
+          <img
+            class="profile-picture"
+            width="50"
+            height="50"
+            src="wmremove-transformed.png"
+            alt="User Profile"
+          />
+        </div>
+        <h1>Email:</h1>
+        <h3 class="email" hidden><%= email %></h3>
+        <h1>Password:</h1>
+        <h3 hidden class="password"><%= password %></h3>
+      </div>
+    </div>
+
+    <script>
+      let profile_picture = document.querySelector(".profile-picture");
+      let email = document.querySelector(".email");
+      let password = document.querySelector(".password");
+      let video = document.querySelector(".video");
+      let second_div = document.querySelector(".second-div");
+      const not_filled_path_comment =
+        "M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105";
+      const fill_path_comments =
+        "M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15";
+      let commentPath = document.querySelector(".commentpath")
+        video.addEventListener("dblclick", () => {
+        if (document.fullscreenElement === video) {
+          document.exitFullscreen();
+        } else {
+          video.requestFullscreen();
+        }
+      });
+      video.addEventListener("click", () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+      profile_picture.addEventListener("click", () => {
+        if (email.hidden == true) {
+          email.hidden = false;
+          password.hidden = false;
+        } else {
+          email.hidden = true;
+          password.hidden = true;
+        }
+      });
+      let comment = document.querySelector(".comment");
+      comment.addEventListener("click", () => {
+        let existingDiv = document.querySelector(".comment-div");
+
+        if (existingDiv) {
+          commentPath.setAttribute("d", not_filled_path_comment);
+          commentPath.classList.remove("fill-comments");
+          existingDiv.remove();
+        } else {
+          commentPath.setAttribute("d", fill_path_comments);
+          commentPath.classList.add("fill-comments");
+
+          let div = document.createElement("div");
+          div.setAttribute("class", "comment-div");
+          let input_field = document.createElement("input");
+          input_field.type = "text";
+          let submit_input_field = document.createElement("button");
+          submit_input_field.class = "input-field-submit";
+          let div_small = document.createElement("div");
+          div_small.setAttribute("class", "comment-div-small");
+          let anchor = document.createElement("a");
+          let a = "https://raidshadowlegends.com/"; // Add some content
+          anchor.setAttribute("href", a);
+          anchor.innerText = "Visit our sponsor Raid Shadow Legends!";
+          let h1 = "Comments";
+          div_small.append(anchor);
+          div.append(div_small);
+
+          second_div.append(div);
+        }
+      });
+      let heart = document.querySelector(".heart");
+      let heart_path = document.querySelector(".heart-path");
+      heart.addEventListener("click", () => {
+        const currentPath = heart_path.getAttribute("d");
+
+        const path1 =
+          "m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15";
+
+        const path2 =
+          "M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314";
+
+        if (currentPath === path1) {
+          heart_path.setAttribute("d", path2);
+          heart.classList.add("fill");
+        } else {
+          heart_path.setAttribute("d", path1);
+          heart.classList.remove("fill");
+        }
+      });
+    </script>
+  </body>
+</html>
